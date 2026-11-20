@@ -13,7 +13,6 @@ import androidx.glance.appwidget.provideContent
 import androidx.glance.background
 import androidx.glance.layout.Alignment
 import androidx.glance.layout.Column
-import androidx.glance.layout.Row
 import androidx.glance.layout.fillMaxSize
 import androidx.glance.layout.padding
 import androidx.glance.text.Text
@@ -41,18 +40,19 @@ class SimpleWidgetContent : GlanceAppWidget() {
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
             Text(
-                text = "¿A donde quieres dirigirte?",
+                text = "¿A dónde quieres dirigirte?",
                 modifier = GlanceModifier.padding(12.dp)
             )
 
-            Row(
-                horizontalAlignment = Alignment.CenterHorizontally
-            ) {
-                Button(
-                    text = "Página Principal",
-                    onClick = actionStartActivity<MainActivity>()
-                )
-            }
+            Button(
+                text = "Página Principal",
+                onClick = actionStartActivity<MainActivity>()
+            )
+
+            Button(
+                text = "Segunda Pantalla",
+                onClick = actionStartActivity<SegundaActivity>()
+            )
         }
     }
 }
