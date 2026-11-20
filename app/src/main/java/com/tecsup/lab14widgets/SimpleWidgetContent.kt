@@ -53,6 +53,23 @@ class SimpleWidgetContent : GlanceAppWidget() {
                 text = "Segunda Pantalla",
                 onClick = actionStartActivity<SegundaActivity>()
             )
+            Text(
+                text = "CONTROL360",
+                modifier = GlanceModifier.padding(12.dp)
+            )
+
+            Text(text = "Pedidos pendientes: 8")
+
+            Text(text = "Pedidos completados: 15")
+            Button(
+                text = "Pedidos",
+                onClick = actionStartActivity<PedidosActivity>()
+            )
+
+            Button(
+                text = "Inventario",
+                onClick = actionStartActivity<InventarioActivity>()
+            )
         }
     }
 }
