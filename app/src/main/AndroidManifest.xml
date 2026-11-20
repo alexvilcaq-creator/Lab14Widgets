@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
@@ -26,12 +27,22 @@
 
         </activity>
 
-        <!-- Segunda pantalla -->
+        <!-- Segunda pantalla del ejercicio 8 -->
         <activity
             android:name=".SegundaActivity"
             android:exported="false" />
 
-        <!-- Registro del Widget -->
+        <!-- Pantalla de pedidos de Control360 -->
+        <activity
+            android:name=".PedidosActivity"
+            android:exported="false" />
+
+        <!-- Pantalla de inventario de Control360 -->
+        <activity
+            android:name=".InventarioActivity"
+            android:exported="false" />
+
+        <!-- Registro del widget -->
         <receiver
             android:name=".SimpleWidget"
             android:exported="true">
